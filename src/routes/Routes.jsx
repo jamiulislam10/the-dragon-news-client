@@ -39,7 +39,7 @@ element: <Navigate to="/category/0"></Navigate>
         {
             path:':id',
             element:<Category></Category>,
-            loader: ()=> fetch('http://localhost:5000/news')
+            loader: ()=> fetch('https://the-news-dragon-server-jamiulislam10.vercel.app/news')
         },
         
         
@@ -52,7 +52,7 @@ element: <Navigate to="/category/0"></Navigate>
         {
           path: ':id',
           element: <PrivateRoutes><News></News></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/news/${params.id}`)
+          loader: ({params}) => fetch(`https://the-news-dragon-server-jamiulislam10.vercel.app/news/${params.id}`)
         }
       ]
     }
